@@ -1,6 +1,6 @@
 # Web Scraping Project
 
-This project is designed to scrape documentation from AWS Lambda and React websites. The scraped data is then saved into a JSON file.
+This project scrapes documentation from AWS Lambda and React websites, saving the data into a JSON file.
 
 ## Project Structure
 
