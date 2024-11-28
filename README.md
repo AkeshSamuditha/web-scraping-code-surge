@@ -6,7 +6,6 @@ This project is designed to scrape documentation from AWS Lambda and React websi
 
 ```
 .
-├── __pycache__/
 ├── aws.py
 ├── main.py
 ├── react.py
@@ -43,7 +42,7 @@ python main.py
 If you want to save the output to a custom file, you can provide the output file name as an argument when running the script:
 
 ```sh
-python main.py custom_output.json
+python main.py --output_file output.json
 ```
 
 ## Output Format
@@ -90,7 +89,7 @@ The scraped data is saved in a JSON file with the following structure:
     - `title`: The title of the subsection.
     - `content`: The main content of the subsection, which may contain up to two levels of subsections.
     - `urls`: A list of URLs found within the subsection.
-      - `code`: A list of dictionaries (if source is aws_lambda) or list of code blocks (if source is react), each containing:
+      - `code`: A list of dictionaries each containing:
         - `language`: The programming language of the code snippet.
         - `code`: The code snippet itself.
       - `urls`: A list of URLs found within the subsection.
